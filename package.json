@@ -1,19 +1,65 @@
 {
-  "name": "vue3-gdpr-guard",
-  "version": "0.0.1",
-  "description": "Vue 3 plugin to use gdpr-guard as efficiently and easily as possible",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Voltra/vue3-gdpr-guard.git"
-  },
-  "author": "Voltra <ludwig.guerin.98@gmx.fr>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Voltra/vue3-gdpr-guard/issues"
-  },
-  "homepage": "https://github.com/Voltra/vue3-gdpr-guard#readme"
+	"name": "vue3-gdpr-guard",
+	"version": "0.0.1",
+	"description": "Vue 3 plugin to use gdpr-guard as efficiently and easily as possible",
+	"keywords": [
+		"gdpr",
+		"vue",
+		"vue3",
+		"composition",
+		"composables",
+		"hooks",
+		"components",
+		"cookies",
+		"cookie",
+		"notice",
+		"banner",
+		"consent",
+		"tracking",
+		"rgpd"
+	],
+	"author": {
+		"name": "Voltra",
+		"email": "ludwig.guerin.98@gmx.fr"
+	},
+	"scripts": {
+		"watch": "vue-cli-service serve",
+		"build": "vue-cli-service build --target lib --name vue3GdprGuard --filename vue3-gdpr-guard src/main.ts",
+		"lint": "vue-cli-service lint"
+	},
+	"main": "index.js",
+	"dependencies": {
+		"gdpr-guard": "^2.2.3"
+	},
+	"peerDependencies": {
+		"vue": "^3.2.13"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.4.0",
+		"@typescript-eslint/parser": "^5.4.0",
+		"@vue/cli-plugin-babel": "~5.0.0",
+		"@vue/cli-plugin-eslint": "~5.0.0",
+		"@vue/cli-plugin-typescript": "~5.0.0",
+		"@vue/cli-service": "~5.0.0",
+		"@vue/eslint-config-typescript": "^9.1.0",
+		"core-js": "^3.8.3",
+		"eslint": "^7.32.0",
+		"eslint-plugin-vue": "^8.0.3",
+		"gh-pages": "^3.2.3",
+		"sass": "^1.32.7",
+		"sass-loader": "^12.0.0",
+		"typescript": "~4.5.5",
+		"vue": "^3.2.13"
+	},
+	"_id": "vue3-gdpr-guard@0.0.1",
+	"bugs": {
+		"url": "https://github.com/Voltra/vue3-gdpr-guard/issues"
+	},
+	"homepage": "https://github.com/Voltra/vue3-gdpr-guard#readme",
+	"license": "MIT",
+	"readme": "README.md",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Voltra/vue3-gdpr-guard.git"
+	}
 }
