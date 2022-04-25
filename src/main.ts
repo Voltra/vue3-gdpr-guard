@@ -1,4 +1,2 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+export * from "./composables/index"
+export * from "./components/index";

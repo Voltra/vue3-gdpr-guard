@@ -25,7 +25,11 @@
 	"scripts": {
 		"watch": "vue-cli-service serve",
 		"build": "vue-cli-service build --target lib --name vue3GdprGuard --filename vue3-gdpr-guard src/main.ts",
-		"lint": "vue-cli-service lint"
+		"lint": "vue-cli-service lint",
+		"docs": "vuepress build docs-src",
+		"watch:docs": "vuepress dev docs-src",
+		"predeploy:docs": "npm run docs",
+		"deploy:docs": "gh-pages -d docs"
 	},
 	"main": "index.js",
 	"dependencies": {
@@ -49,7 +53,10 @@
 		"sass": "^1.32.7",
 		"sass-loader": "^12.0.0",
 		"typescript": "~4.5.5",
-		"vue": "^3.2.13"
+		"vue": "^3.2.13",
+		"vuepress": "^2.0.0-beta.39",
+		"vuepress-plugin-clean-urls": "^1.1.2",
+		"webpack": "^4.0.0"
 	},
 	"_id": "vue3-gdpr-guard@0.0.1",
 	"bugs": {
